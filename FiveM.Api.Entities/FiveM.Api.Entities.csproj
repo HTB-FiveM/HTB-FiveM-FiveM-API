@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Configurations\AddonAccountDataConfiguration.cs" />
+    <Compile Remove="Configurations\AddonInventoryItemConfiguration.cs" />
+    <Compile Remove="Configurations\DataStoreDataConfiguration.cs" />
+    <Compile Remove="Configurations\InventoryGloveboxConfiguration.cs" />
+    <Compile Remove="Configurations\InventoryTrunkConfiguration.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Perigee.Framework.EntityFramework" Version="1.0.25" />
+  </ItemGroup>
+
+</Project>
